@@ -1,12 +1,12 @@
 dsa
 HORROR
-44
 
 asds
 HORROR
-44
 
 tterdas
 DETECTIVE
-150
+
+test
+DETECTIVE
 

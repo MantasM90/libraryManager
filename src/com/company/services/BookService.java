@@ -21,7 +21,7 @@ public class BookService {
         Scanner sc = new Scanner(file);
         ArrayList<Book> books = new ArrayList<>();
 
-        while (sc.hasNextLine()) {
+        while (sc.hasNext()) {
             String name = sc.nextLine();
             String genre = sc.nextLine();
             sc.nextLine();
@@ -67,7 +67,6 @@ public class BookService {
         rewriteAllBooks(newAllBooks);
     }
 
-
     public Book getBookByName(String name) throws BookException, FileNotFoundException {
 
         for (Book book: getAllBooks()) {
@@ -91,7 +90,6 @@ public class BookService {
 
     private void rewriteAllBooks(ArrayList<Book> books) throws IOException {
 
-        System.out.println("perrasyta");
         FileWriter fw = new FileWriter(path);
         PrintWriter writer = new PrintWriter(fw);
 

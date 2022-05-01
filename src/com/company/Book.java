@@ -9,7 +9,6 @@ public class Book {
     private String name;
     private Genre genre;
 
-
     public Book(String name, Genre genre) {
         this.name = name;
         this.genre = genre;
@@ -35,5 +34,13 @@ public class Book {
     @Override
     public int hashCode() {
         return Objects.hash(name, genre);
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "name='" + name + '\'' +
+                ", genre=" + genre +
+                '}';
     }
 }
